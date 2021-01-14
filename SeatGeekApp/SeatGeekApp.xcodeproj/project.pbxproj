@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		433DF6C525A546BD006CBF47 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433DF6C425A546BD006CBF47 /* EventDetailViewController.swift */; };
+		433DF6CA25A648B1006CBF47 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433DF6C925A648B1006CBF47 /* Venue.swift */; };
+		433DF6CF25A68358006CBF47 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433DF6CE25A68358006CBF47 /* EventService.swift */; };
+		433DF6D425A68A4B006CBF47 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433DF6D325A68A4B006CBF47 /* EventsTableViewCell.swift */; };
+		433DF6E325A93F28006CBF47 /* Performer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433DF6E225A93F28006CBF47 /* Performer.swift */; };
+		433DF6E825ACFAE3006CBF47 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433DF6E725ACFAE3006CBF47 /* Favorites.swift */; };
+		43883970258BEC9A00699326 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4388396F258BEC9A00699326 /* Event.swift */; };
+		43A37597258826620022CFB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A37596258826620022CFB2 /* AppDelegate.swift */; };
+		43A37599258826620022CFB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A37598258826620022CFB2 /* SceneDelegate.swift */; };
+		43A3759E258826620022CFB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A3759C258826620022CFB2 /* Main.storyboard */; };
+		43A375A1258826620022CFB2 /* SeatGeekApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43A3759F258826620022CFB2 /* SeatGeekApp.xcdatamodeld */; };
+		43A375A3258826650022CFB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A375A2258826650022CFB2 /* Assets.xcassets */; };
+		43A375A6258826650022CFB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A375A4258826650022CFB2 /* LaunchScreen.storyboard */; };
+		43A375B1258826650022CFB2 /* SeatGeekAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A375B0258826650022CFB2 /* SeatGeekAppTests.swift */; };
+		43A375BC258826650022CFB2 /* SeatGeekAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A375BB258826650022CFB2 /* SeatGeekAppUITests.swift */; };
+		43BEBB1825882ECD000881D0 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BEBB1725882ECD000881D0 /* EventsTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43A375AD258826650022CFB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43A3758B258826620022CFB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43A37592258826620022CFB2;
+			remoteInfo = SeatGeekApp;
+		};
+		43A375B8258826650022CFB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43A3758B258826620022CFB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43A37592258826620022CFB2;
+			remoteInfo = SeatGeekApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		433DF6C425A546BD006CBF47 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		433DF6C925A648B1006CBF47 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		433DF6CE25A68358006CBF47 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		433DF6D325A68A4B006CBF47 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		433DF6E225A93F28006CBF47 /* Performer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Performer.swift; sourceTree = "<group>"; };
+		433DF6E725ACFAE3006CBF47 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		4388396F258BEC9A00699326 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		43A37593258826620022CFB2 /* SeatGeekApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeatGeekApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A37596258826620022CFB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43A37598258826620022CFB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		43A3759D258826620022CFB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43A375A0258826620022CFB2 /* SeatGeekApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SeatGeekApp.xcdatamodel; sourceTree = "<group>"; };
+		43A375A2258826650022CFB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43A375A5258826650022CFB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43A375A7258826650022CFB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A375AC258826650022CFB2 /* SeatGeekAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeatGeekAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A375B0258826650022CFB2 /* SeatGeekAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatGeekAppTests.swift; sourceTree = "<group>"; };
+		43A375B2258826650022CFB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A375B7258826650022CFB2 /* SeatGeekAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeatGeekAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A375BB258826650022CFB2 /* SeatGeekAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatGeekAppUITests.swift; sourceTree = "<group>"; };
+		43A375BD258826650022CFB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43BEBB1725882ECD000881D0 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43A37590258826620022CFB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A375A9258826650022CFB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A375B4258826650022CFB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		433DF6EC25B0F2CD006CBF47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				433DF6CE25A68358006CBF47 /* EventService.swift */,
+				433DF6C925A648B1006CBF47 /* Venue.swift */,
+				4388396F258BEC9A00699326 /* Event.swift */,
+				433DF6E725ACFAE3006CBF47 /* Favorites.swift */,
+				433DF6E225A93F28006CBF47 /* Performer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		433DF6ED25B0F319006CBF47 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				43BEBB1725882ECD000881D0 /* EventsTableViewController.swift */,
+				433DF6C425A546BD006CBF47 /* EventDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		43A3758A258826620022CFB2 = {
+			isa = PBXGroup;
+			children = (
+				43A37595258826620022CFB2 /* SeatGeekApp */,
+				43A375AF258826650022CFB2 /* SeatGeekAppTests */,
+				43A375BA258826650022CFB2 /* SeatGeekAppUITests */,
+				43A37594258826620022CFB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43A37594258826620022CFB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43A37593258826620022CFB2 /* SeatGeekApp.app */,
+				43A375AC258826650022CFB2 /* SeatGeekAppTests.xctest */,
+				43A375B7258826650022CFB2 /* SeatGeekAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43A37595258826620022CFB2 /* SeatGeekApp */ = {
+			isa = PBXGroup;
+			children = (
+				433DF6ED25B0F319006CBF47 /* View Controllers */,
+				433DF6EC25B0F2CD006CBF47 /* Models */,
+				433DF6D325A68A4B006CBF47 /* EventsTableViewCell.swift */,
+				43A37596258826620022CFB2 /* AppDelegate.swift */,
+				43A37598258826620022CFB2 /* SceneDelegate.swift */,
+				43A3759C258826620022CFB2 /* Main.storyboard */,
+				43A375A2258826650022CFB2 /* Assets.xcassets */,
+				43A375A4258826650022CFB2 /* LaunchScreen.storyboard */,
+				43A375A7258826650022CFB2 /* Info.plist */,
+				43A3759F258826620022CFB2 /* SeatGeekApp.xcdatamodeld */,
+			);
+			path = SeatGeekApp;
+			sourceTree = "<group>";
+		};
+		43A375AF258826650022CFB2 /* SeatGeekAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				43A375B0258826650022CFB2 /* SeatGeekAppTests.swift */,
+				43A375B2258826650022CFB2 /* Info.plist */,
+			);
+			path = SeatGeekAppTests;
+			sourceTree = "<group>";
+		};
+		43A375BA258826650022CFB2 /* SeatGeekAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43A375BB258826650022CFB2 /* SeatGeekAppUITests.swift */,
+				43A375BD258826650022CFB2 /* Info.plist */,
+			);
+			path = SeatGeekAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43A37592258826620022CFB2 /* SeatGeekApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A375C0258826650022CFB2 /* Build configuration list for PBXNativeTarget "SeatGeekApp" */;
+			buildPhases = (
+				43A3758F258826620022CFB2 /* Sources */,
+				43A37590258826620022CFB2 /* Frameworks */,
+				43A37591258826620022CFB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeatGeekApp;
+			productName = SeatGeekApp;
+			productReference = 43A37593258826620022CFB2 /* SeatGeekApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43A375AB258826650022CFB2 /* SeatGeekAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A375C3258826650022CFB2 /* Build configuration list for PBXNativeTarget "SeatGeekAppTests" */;
+			buildPhases = (
+				43A375A8258826650022CFB2 /* Sources */,
+				43A375A9258826650022CFB2 /* Frameworks */,
+				43A375AA258826650022CFB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43A375AE258826650022CFB2 /* PBXTargetDependency */,
+			);
+			name = SeatGeekAppTests;
+			productName = SeatGeekAppTests;
+			productReference = 43A375AC258826650022CFB2 /* SeatGeekAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43A375B6258826650022CFB2 /* SeatGeekAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A375C6258826650022CFB2 /* Build configuration list for PBXNativeTarget "SeatGeekAppUITests" */;
+			buildPhases = (
+				43A375B3258826650022CFB2 /* Sources */,
+				43A375B4258826650022CFB2 /* Frameworks */,
+				43A375B5258826650022CFB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43A375B9258826650022CFB2 /* PBXTargetDependency */,
+			);
+			name = SeatGeekAppUITests;
+			productName = SeatGeekAppUITests;
+			productReference = 43A375B7258826650022CFB2 /* SeatGeekAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43A3758B258826620022CFB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					43A37592258826620022CFB2 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					43A375AB258826650022CFB2 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 43A37592258826620022CFB2;
+					};
+					43A375B6258826650022CFB2 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 43A37592258826620022CFB2;
+					};
+				};
+			};
+			buildConfigurationList = 43A3758E258826620022CFB2 /* Build configuration list for PBXProject "SeatGeekApp" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43A3758A258826620022CFB2;
+			productRefGroup = 43A37594258826620022CFB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43A37592258826620022CFB2 /* SeatGeekApp */,
+				43A375AB258826650022CFB2 /* SeatGeekAppTests */,
+				43A375B6258826650022CFB2 /* SeatGeekAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43A37591258826620022CFB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A375A6258826650022CFB2 /* LaunchScreen.storyboard in Resources */,
+				43A375A3258826650022CFB2 /* Assets.xcassets in Resources */,
+				43A3759E258826620022CFB2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A375AA258826650022CFB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A375B5258826650022CFB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43A3758F258826620022CFB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433DF6CF25A68358006CBF47 /* EventService.swift in Sources */,
+				433DF6C525A546BD006CBF47 /* EventDetailViewController.swift in Sources */,
+				43A37597258826620022CFB2 /* AppDelegate.swift in Sources */,
+				43A375A1258826620022CFB2 /* SeatGeekApp.xcdatamodeld in Sources */,
+				433DF6CA25A648B1006CBF47 /* Venue.swift in Sources */,
+				433DF6E825ACFAE3006CBF47 /* Favorites.swift in Sources */,
+				43BEBB1825882ECD000881D0 /* EventsTableViewController.swift in Sources */,
+				433DF6E325A93F28006CBF47 /* Performer.swift in Sources */,
+				43883970258BEC9A00699326 /* Event.swift in Sources */,
+				433DF6D425A68A4B006CBF47 /* EventsTableViewCell.swift in Sources */,
+				43A37599258826620022CFB2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A375A8258826650022CFB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A375B1258826650022CFB2 /* SeatGeekAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A375B3258826650022CFB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A375BC258826650022CFB2 /* SeatGeekAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43A375AE258826650022CFB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43A37592258826620022CFB2 /* SeatGeekApp */;
+			targetProxy = 43A375AD258826650022CFB2 /* PBXContainerItemProxy */;
+		};
+		43A375B9258826650022CFB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43A37592258826620022CFB2 /* SeatGeekApp */;
+			targetProxy = 43A375B8258826650022CFB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43A3759C258826620022CFB2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43A3759D258826620022CFB2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43A375A4258826650022CFB2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43A375A5258826650022CFB2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43A375BE258826650022CFB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43A375BF258826650022CFB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43A375C1258826650022CFB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3QM6DKAS9;
+				INFOPLIST_FILE = SeatGeekApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SeatGeekApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43A375C2258826650022CFB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3QM6DKAS9;
+				INFOPLIST_FILE = SeatGeekApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SeatGeekApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		43A375C4258826650022CFB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3QM6DKAS9;
+				INFOPLIST_FILE = SeatGeekAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SeatGeekAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeatGeekApp.app/SeatGeekApp";
+			};
+			name = Debug;
+		};
+		43A375C5258826650022CFB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3QM6DKAS9;
+				INFOPLIST_FILE = SeatGeekAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SeatGeekAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeatGeekApp.app/SeatGeekApp";
+			};
+			name = Release;
+		};
+		43A375C7258826650022CFB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3QM6DKAS9;
+				INFOPLIST_FILE = SeatGeekAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SeatGeekAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SeatGeekApp;
+			};
+			name = Debug;
+		};
+		43A375C8258826650022CFB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3QM6DKAS9;
+				INFOPLIST_FILE = SeatGeekAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SeatGeekAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SeatGeekApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43A3758E258826620022CFB2 /* Build configuration list for PBXProject "SeatGeekApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A375BE258826650022CFB2 /* Debug */,
+				43A375BF258826650022CFB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43A375C0258826650022CFB2 /* Build configuration list for PBXNativeTarget "SeatGeekApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A375C1258826650022CFB2 /* Debug */,
+				43A375C2258826650022CFB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43A375C3258826650022CFB2 /* Build configuration list for PBXNativeTarget "SeatGeekAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A375C4258826650022CFB2 /* Debug */,
+				43A375C5258826650022CFB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43A375C6258826650022CFB2 /* Build configuration list for PBXNativeTarget "SeatGeekAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A375C7258826650022CFB2 /* Debug */,
+				43A375C8258826650022CFB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		43A3759F258826620022CFB2 /* SeatGeekApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				43A375A0258826620022CFB2 /* SeatGeekApp.xcdatamodel */,
+			);
+			currentVersion = 43A375A0258826620022CFB2 /* SeatGeekApp.xcdatamodel */;
+			path = SeatGeekApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 43A3758B258826620022CFB2 /* Project object */;
+}
